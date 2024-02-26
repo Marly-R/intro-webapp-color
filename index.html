@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- esto es para comentarios-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Selector de Color RGB</title>
+</head>
+<body>
+
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Selector de Color RGB</h1>
+    
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="colorPicker">Color Picker:</label>
+                    <input type="color" class="form-control" id="colorPicker">
+                </div>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="redRange">Rojo:</label>
+                    <input type="range" class="form-control-range" id="redRange" min="0" max="255" value="0">
+                    <input type="number" class="form-control mt-2" id="redInput" min="0" max="255" value="0">
+                </div>
+            </div>
+    
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="greenRange">Verde:</label>
+                    <input type="range" class="form-control-range" id="greenRange" min="0" max="255" value="0">
+                    <input type="number" class="form-control mt-2" id="greenInput" min="0" max="255" value="0">
+                </div>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="blueRange">Azul:</label>
+                    <input type="range" class="form-control-range" id="blueRange" min="0" max="255" value="0">
+                    <input type="number" class="form-control mt-2" id="blueInput" min="0" max="255" value="0">
+                </div>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="col-md-6">
+                <div class="mt-4">
+                    <h5>Tonalidad RGB:</h5>
+                    <div id="colorBox" class="color-box"></div>
+                    <p class="mt-3"><strong>Código Hexadecimal:</strong> <span id="hexCode">#000000</span></p>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html> 
